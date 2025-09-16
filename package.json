@@ -1,0 +1,29 @@
+{
+  "name": "privacy-guard",
+  "version": "1.0.0",
+  "description": "A desktop app to manage Windows privacy settings.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.privacyguard.app",
+    "win": {
+      "target": "portable",
+      "requestedExecutionLevel": "requireAdministrator",
+      "icon": "icons/icon.ico"
+    }
+  },
+  "keywords": [],
+  "author": "DEN",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "winreg": "^1.2.5"
+  }
+}
